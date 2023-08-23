@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .dag{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./Assets/icons8-star-72.png" id= "rated" alt="" width="72" height="72">
+        <h1 class="display-5 fw-bold text-body-emphasis">Star Rating Component </h1>
+        <div class="col-lg-6 mx-auto">
+          <img id = "one" src="./Assets/icons8-star-72-blank.png" alt="" onclick="rateone() ">
+          <img id = "two" src="./Assets/icons8-star-72-blank.png" alt="" onclick="ratetwo()">
+          <img id = "three" src="./Assets/icons8-star-72-blank.png" alt="" onclick="ratethree()">
+          <img id = "four" src="./Assets/icons8-star-72-blank.png" alt="" onclick="ratefour()">
+          <img id = "five" src="./Assets/icons8-star-72-blank.png" alt="" onclick="ratefive()">
+          <p  class="thanks dag">Thank you for rating!</p>
+        </div>
+      </div>
+      <script>
+        function rateone(){
+            var ratedone = document.getElementById("one").src;
+            one.src = document.getElementById("rated").src;
+            document.querySelector("p").style.visibility = "visible";
+            
+        }
+        function ratetwo(){
+            var ratedone = document.getElementById("one").src;
+            one.src = document.getElementById("rated").src;
+            var ratedtwo = document.getElementById("two").src;
+            two.src= document.getElementById("rated").src;
+            document.querySelector("p").style.visibility = "visible";
+        }
+        function ratethree(){
+            var ratedone = document.getElementById("one").src;
+            one.src = document.getElementById("rated").src;
+            var ratedtwo = document.getElementById("two").src;
+            two.src= document.getElementById("rated").src;
+            var ratedthree = document.getElementById("three").src;
+            three.src=document.getElementById("rated").src;
+            document.querySelector("p").style.visibility = "visible";
+        }
+        function ratefour(){
+            var ratedone = document.getElementById("one").src;
+            one.src = document.getElementById("rated").src;
+            var ratedtwo = document.getElementById("two").src;
+            two.src= document.getElementById("rated").src;
+            var ratedthree = document.getElementById("three").src;
+            three.src=document.getElementById("rated").src;
+            var ratedfour = document.getElementById("four").src;
+            four.src = document.getElementById("rated").src;
+            document.querySelector("p").style.visibility = "visible";
+        }
+        function ratefive(){
+            var ratedone = document.getElementById("one").src;
+            one.src = document.getElementById("rated").src;
+            var ratedtwo = document.getElementById("two").src;
+            two.src= document.getElementById("rated").src;
+            var ratedthree = document.getElementById("three").src;
+            three.src=document.getElementById("rated").src;
+            var ratedfour = document.getElementById("four").src;
+            four.src = document.getElementById("rated").src;
+            var ratedfive = document.getElementById("five").src;
+            five.src = document.getElementById("rated").src;
+            document.querySelector("p").style.visibility = "visible";
+            
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
